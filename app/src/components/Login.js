@@ -19,7 +19,7 @@ const Login = props => {
     .post('/login', userCredentials)
     .then(res => {
       localStorage.setItem('token', res.data.payload)
-      props.history.push('/myfriends')
+      props.history.push('/friends')
     })
     .catch(err => console.error(err))
   }

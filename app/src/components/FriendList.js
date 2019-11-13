@@ -19,8 +19,8 @@ const FriendList = () => {
         <FriendForm />
         <h2> Friend List </h2>
         {friends.map(friend => (
-        <div key={friend.id}>
-          <FriendCard props={friend} />
+        <div>
+          <FriendCard  key={friend.id} friend={friend} />
         </div>
       ))}
         </>
